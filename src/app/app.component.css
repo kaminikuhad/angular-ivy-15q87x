@@ -1,17 +1,32 @@
 p {
   font-family: Lato;
 }
-.searchfield{
+.searchfield {
   height: 35px;
-  width: 185px;
+  width: 225px;
   border: none;
   margin-left: 10px;
 }
-.searchfield:focus{
+.searchfield:focus {
   border: none;
 }
-.searchcolumn{
+.searchfield:active {
+  border: none;
+}
+.searchcolumn {
   border: 1px solid rgb(139, 138, 138);
   border-radius: 10px;
+  width: 20rem;
+  margin-bottom: 10px;
+}
+.buttonheight {
+  height: 25px;
+}
+.name {
+  text-align: center;
+}
+.searchdivcolumn {
+  border: 1px solid rgb(139, 138, 138);
+  border-radius: 5px;
   width: 20rem;
 }

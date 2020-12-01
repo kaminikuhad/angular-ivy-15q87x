@@ -1,7 +1,25 @@
 <hello name="{{ name }}"></hello>
 <div class="searchcolumn">
-	<input type="text" class="form-control searchfield" placeholder="Type text here">
-	<button>Search</button>
+	<input type="text" class="form-control searchfield" placeholder="Type text here" [(ngModel)]="abc3">
+	<button class="buttonheight">Search</button>
+</div>
+<!-- <div>{{abc | json}}</div> -->
+<div *ngFor="let clientdata of abc1">
+	<div class="searchdivcolumn">
+		<!-- <h3>{{clientdata?.name}}</h3>
+		<small>{{clientdata?.username}}</small> -->
+		<h3 class="name">{{clientdata.name}}</h3>
+		<h6 class="name">{{clientdata?.username}}</h6>
+	</div>
+</div>
+<!-- <div>
+	<div class="searchcolumn">
+		<h3 class="name">name</h3>
+		<small class="name">data</small>
+	</div>
+</div> -->
+<div>
+	<button class="buttonheight" >Remove Item</button>
 </div>
 <p>
 	Start editing to see some magic happen :)
